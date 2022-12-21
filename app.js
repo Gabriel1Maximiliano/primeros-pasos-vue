@@ -8,7 +8,17 @@ const app = Vue.createApp({
         author:'Lola',
         quote:'Hola Mundo'
     }
-   }
+   },
+   methods:{
+    doSomething(){
+        console.log('Hola Mundo');
+        this.author = 'Monasterio';
+        this.capitalize();
+    },
+    capitalize(){
+        this.quote = this.quote.toUpperCase()
+    }
+}
 })
 
 app.mount('#myApp');
