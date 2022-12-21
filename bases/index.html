@@ -11,13 +11,13 @@
 <body>
   <!-- Vue tiene contorl absoluto de este div -->
   <div id="myApp" >
-   <h1>Batman Quotes</h1>
-   <ul>
-    <li v-for="({quote,author},index) in quotes" >
-      <span>{{ index + 1 }} {{ quote }}</span>
-      <blockquote>{{ author }}</blockquote>
-    </li>
-   </ul>
+    <h1>Hola mundo</h1>
+    <p>{{ quote }}</p>
+    <blockquote>-{{ author }}</blockquote>
+  
+  <button v-on:click="doSomething">
+    Change Quote
+  </button>
 </div>
   <script src="./app.js" ></script>
 </body>
